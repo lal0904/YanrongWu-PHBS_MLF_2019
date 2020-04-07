@@ -80,6 +80,16 @@ We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), whi
 - *6-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD6MTD156N)**
 - *12-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD12MD156N)**
 
+## 3. Project Goal
+When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
+Project method:  
+However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
+As a result, we will add the features below into our model,   
+1)     Observation period: range from a month to a year  
+2)     threshold of the linear combination of the return rate such as: Ay – Bx< c   
+3)     Definition of the recession: range from 10% to 50%.  
+When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
+
 
 
 
