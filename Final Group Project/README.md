@@ -92,8 +92,3 @@ As a result, we will add the features below into our model,
 3) Definition of the recession: range from 10% to 50%.  
    
 When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
-
-
-
-
-
