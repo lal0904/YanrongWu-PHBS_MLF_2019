@@ -122,8 +122,8 @@ When we defined the features and processed the data, we will divide the set into
 
 ## 9. Reference  
 [1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
-[2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll
-[3] The National Bureau of Economic Research: https://www.nber.org/cycles.html  
-[4] St Louis Federal Research Economic Database: https://fred.stlouisfed.org/series/JHDUSRGDPBR
-[5] Wind  
-[6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.  
+[2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll  
+[3] The National Bureau of Economic Research: https://www.nber.org/cycles.html    
+[4] St Louis Federal Research Economic Database: https://fred.stlouisfed.org/series/JHDUSRGDPBR  
+[5] Wind   
+[6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.    
