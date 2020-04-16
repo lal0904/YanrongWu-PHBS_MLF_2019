@@ -24,6 +24,17 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 ### The table below illustrates the summary of the data:
 ![Features](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/data.png)
 
+•	DGS1：The YTM of the one-year US treasury 
+•	DGS3：The YTM of the 3-year US treasury 
+•	DGS5：The YTM of the 5-year US treasury 
+•	Weekly return: DJIA (Dow Jones Industrial Average) weekly return at the date.
+•	Return of past month：DJIA accumulated monthly return of the last month. 
+•	Return of past half year：DJIA accumulated return of the last half year. 
+•	Return of past year：DJIA accumulated return of the last year.. 
+•	Volatility: Volatility of DJIA this week
+•	Average weekly Volatility of past month: the average of weekly Volatility of DJIA last month
+•	Average weekly Volatility of past quarter: the average of weekly Volatility of DJIA last quarter.
+
 ## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
 ## 5. Data Preprocessing(一鸣，数据处理过程)
 
