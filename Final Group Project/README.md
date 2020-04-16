@@ -71,7 +71,7 @@ Our process model of the fact is class all the date between an recession as 1 an
 The dataset is illustrated below:
 ![divided_data](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/divided_data.png)
 
-**Tips: Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. The calssification result in the table below in fact is delayed for six months, which means that the y of 2000/1/1 is the division of 2000/7/1 which is six month later.**
+***Tips:*** Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. The calssification result in the table below in fact is delayed for six months, which means that the ***y*** of 2000/1/1 is the division of 2000/7/1 which is six month later.
 
 
 ## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
