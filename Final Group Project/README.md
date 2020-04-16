@@ -53,7 +53,9 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 
 •	***Average weekly Volatility of past quarter:*** the average of weekly Volatility of DJIA last quarter
 
-***Tips: Consering the YTM is daily data but the date in the [DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) and 
+***Tips: 
+
+***Consering the YTM is daily data but the date in the [DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) and 
 [Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) are arranged in weekly or monthly data. As a result, for everyday, we chose to trace back to the first accessable date to fill in the blanks in the features.***
 
 ### 3.3 Classifications of Recession
@@ -72,7 +74,7 @@ The dataset is illustrated below:
 ![divided_data](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/divided_data.png)
 
 ***Tips:*** 
-1) ***10M1***means the differnce of YTM of 10-year US treasury and 1-year US treasury. ***10M3***, ***10M5***, ***5M3***, ***5M1*** have the same meaning.
+1) ***10M1*** means the differnce of YTM of 10-year US treasury and 1-year US treasury. ***10M3***, ***10M5***, ***5M3***, ***5M1*** have the same meaning.
 
 2) Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. ***The calssification result in the table below in fact is delayed for six months, which means that the y of 2000/1/1 is the division of 2000/7/1 which is six month later.***
 
