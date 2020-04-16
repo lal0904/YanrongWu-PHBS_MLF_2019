@@ -81,12 +81,13 @@ We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), whi
 - *12-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD12MD156N)**
 
 ##### Part 5: Discription Statistics
+The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
 A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
 The following figures show the different yield curve after 1990.  
 ![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
 ![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
   
-A recession is defined as 2 consecutive quarters of negative GDP growth.  
+Here a recession is defined as 2 consecutive quarters of negative GDP growth.  
 ![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
 
 The following figures are interest spread with recessions highlighted.  
