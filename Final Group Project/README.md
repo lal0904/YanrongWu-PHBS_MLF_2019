@@ -53,6 +53,9 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 
 •	***Average weekly Volatility of past quarter:*** the average of weekly Volatility of DJIA last quarter
 
+***Tips:*** Consering the YTM is daily data but the date in the [DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) and 
+[Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) are arranged in weekly or monthly data. As a result, for everyday, we chose to trace back to the first accessable date to fill in the blanks in the features.
+
 ## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
 ## 5. Data Preprocessing(一鸣，数据处理过程)
 
