@@ -18,10 +18,56 @@ Referring to the professor's suggestion, our group decided to launch the project
 ## 2. Project Goal
 When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
 
-## 3. Brief Description of Data（这块很多不需要的part1234 要删减）
+## 3. Data Description 
 
-We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Here are the title of each column data.
+We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Please see the appendix for details
 
+The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
+  
+A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
+The following figures show the different yield curve after 1990.  
+![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
+![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
+  
+A technical recession is defined as two consecutive quarters of negative growth(GDP), as such we can obtain the dates that fit this description from the St Louis Federal Research Economic Database. This time series takes binary form, with 1 denoting a recession period and 0 other wise.
+
+![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
+
+The following figures are interest spread with recessions highlighted.  
+![10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
+![10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
+![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
+In our following process, we will use data from 1962.
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
+
+## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
+## 5. Data Preprocessing(一鸣，数据处理过程)
+
+
+## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
+However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
+  
+As a result, we will add the features below into our model,   
+1) Observation period: range from a month to a year;  
+2) Threshold of the linear combination of the return rate such as: Ay – Bx< c;   
+3) Definition of the recession: range from 10% to 50%.  
+   
+When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
+
+## 7. Future Improvement  
+
+## 8. Conlusion  
+
+## 9. Reference  
+[1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
+[2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll  
+[3] The National Bureau of Economic Research: https://www.nber.org/cycles.html    
+[4] St Louis Federal Research Economic Database: https://fred.stlouisfed.org/series/JHDUSRGDPBR  
+[5] Wind   
+[6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.    
+
+## 10. Appendix 
 ##### ***Part 1: Some Difference***s
 
 - *Moody's Seasoned Aaa Corporate Bond **Minus** Federal Funds Rate* (**AAAFFM**)
@@ -82,48 +128,3 @@ We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), whi
 - *3-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD3MTD156N)**
 - *6-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD6MTD156N)**
 - *12-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD12MD156N)**
-
-##### Part 5: Discription Statistics
-The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
-A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
-The following figures show the different yield curve after 1990.  
-![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
-![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
-  
-A technical recession is defined as two consecutive quarters of negative growth(GDP), as such we can obtain the dates that fit this description from the St Louis Federal Research Economic Database. This time series takes binary form, with 1 denoting a recession period and 0 other wise.
-
-![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
-
-The following figures are interest spread with recessions highlighted.  
-![10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
-![10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
-![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
-In our following process, we will use data from 1962.
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
-
-## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
-## 5. Data Preprocessing(一鸣，数据处理过程)
-
-
-## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
-However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
-  
-As a result, we will add the features below into our model,   
-1) Observation period: range from a month to a year;  
-2) Threshold of the linear combination of the return rate such as: Ay – Bx< c;   
-3) Definition of the recession: range from 10% to 50%.  
-   
-When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
-
-## 7. Future Improvement  
-
-## 8. Conlusion  
-
-## 9. Reference  
-[1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
-[2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll  
-[3] The National Bureau of Economic Research: https://www.nber.org/cycles.html    
-[4] St Louis Federal Research Economic Database: https://fred.stlouisfed.org/series/JHDUSRGDPBR  
-[5] Wind   
-[6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.    
