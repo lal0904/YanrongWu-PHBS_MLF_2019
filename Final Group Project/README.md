@@ -90,7 +90,8 @@ The following figures show the different yield curve after 1990.
 ![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
 ![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
   
-Here a recession is defined as 2 consecutive quarters of negative GDP growth.  
+A technical recession is defined as two consecutive quarters of negative growth(GDP), as such we can obtain the dates that fit this description from the St Louis Federal Research Economic Database. This time series takes binary form, with 1 denoting a recession period and 0 other wise.
+
 ![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
 
 The following figures are interest spread with recessions highlighted.  
@@ -123,5 +124,6 @@ When we defined the features and processed the data, we will divide the set into
 [1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
 [2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll
 [3] The National Bureau of Economic Research: https://www.nber.org/cycles.html  
-[4] Wind  
-[5] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.  
+[4] St Louis Federal Research Economic Database: https://fred.stlouisfed.org/series/JHDUSRGDPBR
+[5] Wind  
+[6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.  
