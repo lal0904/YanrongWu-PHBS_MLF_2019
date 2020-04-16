@@ -80,6 +80,16 @@ We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), whi
 - *6-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD6MTD156N)**
 - *12-Month London Interbank Offered Rate (LIBOR), based on U.S. Dollar* **(USD12MD156N)**
 
+##### Part 5: Discription Statistics
+A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
+The following figures show the different yield curve after 1990.  
+
+A recession is defined as 2 consecutive quarters of negative GDP growth.  
+
+The following figures are interest spread with recessions highlighted.  
+
+
+
 ## 3. Project Goal
 When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
 
