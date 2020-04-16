@@ -22,27 +22,7 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 ### 1. We download the YTM (yield to maturity) of the US treasuries with various duration range from 1 month to 30 years,from from [fred.stlouisfed.org](fred.stlouisfed.org)
 ### 2. Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI
 ### The table below illustrates the summary of the data:
-![features](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/data.png)
-We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Please see the appendix for details
-
-The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
-
-A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
-The following figures show the different yield curve after 1990.  
-![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
-![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
-
-A technical recession is defined as two consecutive quarters of negative growth(GDP), as such we can obtain the dates that fit this description from the St Louis Federal Research Economic Database. This time series takes binary form, with 1 denoting a recession period and 0 other wise.
-
-![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
-
-The following figures are interest spread with recessions highlighted.  
-![10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
-![10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
-![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
-In our following process, we will use data from 1962.
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
+![Features](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/data.png)
 
 ## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
 ## 5. Data Preprocessing(一鸣，数据处理过程)
