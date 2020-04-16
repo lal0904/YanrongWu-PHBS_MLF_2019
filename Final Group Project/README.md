@@ -66,6 +66,14 @@ According to the table, we can define the period between the peak and through of
 
 Our process model of the fact is class all the date between an recession as 1 and 0 for others, which means that all ***y*** during the interval like ***December 1969 to February 1970*** is 1 and the others is 0
 
+### 3.4 Generate the Whole Dataset Divided into True or False
+
+The dataset is illustrated below:
+![divided_data](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/divided_data.png)
+
+**Tips: Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. The calssification result in the table below in fact is delayed for six months, which means that the y of 2000/1/1 is the division of 2000/7/1 which is six month later.**
+
+
 ## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
 However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
 
