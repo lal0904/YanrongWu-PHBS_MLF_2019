@@ -18,8 +18,10 @@ Referring to the professor's suggestion, our group decided to launch the project
 ## 2. Project Goal
 When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
 
-## 3. Data Description 
-
+## 3. Data Acquisition and Description
+1、	We download the YTM (yield to maturity) of the US treasuries with various duration range from 1 month to 30 years,from website:
+2、	Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI
+The table below illustrates the summary of the data:
 We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Please see the appendix for details
 
 The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
