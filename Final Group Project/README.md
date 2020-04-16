@@ -93,7 +93,9 @@ The following figures are interest spread with recessions highlighted.
 ![10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
 ![10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
 ![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
-
+In our following process, we will use data from 1962.
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.pngg)  
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)  
 
 ## 3. Project Goal
 When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
