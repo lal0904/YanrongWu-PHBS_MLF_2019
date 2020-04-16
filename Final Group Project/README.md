@@ -26,8 +26,8 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 
 [DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) for weekly price and volatility data of DJIA (Dow Jones Industrial Average) index.
 
-[Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) for monthly CPI and unemployment rate
-.
+[Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) for monthly CPI and unemployment rate.
+
 ### 3.2 Feature Engineering
 **The table below illustrates the summary of the potential features we get**
 
@@ -56,9 +56,10 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 ***Tips: Consering the YTM is daily data but the date in the [DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) and 
 [Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) are arranged in weekly or monthly data. As a result, for everyday, we chose to trace back to the first accessable date to fill in the blanks in the features.***
 
-## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
-## 5. Data Preprocessing(一鸣，数据处理过程)
+### 3.3 Classifications of Recession
 
+According to [NBER's Business Cycle Dating Committee](http://www.nber.org/cycles/recessions.html), important recessions of US is illustrated in the table below:
+![US_Business_Cycle](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/US_Business_Cycle.png)
 
 ## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
 However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
