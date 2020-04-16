@@ -29,9 +29,7 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 [Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) for monthly CPI and unemployment rate
 .
 ### 3.2 Feature Engineering
-## 3.3 Data Preprocessing
-
-**The table below illustrates the summary of the data:**
+**The table below illustrates the summary of the potential features we get**
 
 ![Features](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/data.png)
 
