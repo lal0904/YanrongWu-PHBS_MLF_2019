@@ -23,12 +23,12 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Please see the appendix for details
 
 The rule of thumb definition of a recession is two consecutive quarters of negative Gross Domestic Product (GDP) growth. This definition was coined in a 1974 New York Times article from the head of the Bureau of Labor Statistics, who also suggested several other measurements. The National Bureau of Economic Research (NBER) defines an economic recession as: "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales." NBER is the authority on recessions, especially when we look at when they started and when they ended.  
-  
+
 A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
 The following figures show the different yield curve after 1990.  
 ![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
 ![Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
-  
+
 A technical recession is defined as two consecutive quarters of negative growth(GDP), as such we can obtain the dates that fit this description from the St Louis Federal Research Economic Database. This time series takes binary form, with 1 denoting a recession period and 0 other wise.
 
 ![recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
@@ -47,13 +47,25 @@ In our following process, we will use data from 1962.
 
 ## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
 However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
-  
+
 As a result, we will add the features below into our model,   
 1) Observation period: range from a month to a year;  
 2) Threshold of the linear combination of the return rate such as: Ay – Bx< c;   
 3) Definition of the recession: range from 10% to 50%.  
-   
+
 When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
+
+#### Traditional Model：LR
+
+![learning curve figure lr](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/lr-learning-curve.png?raw=true)
+
+#### Traditional Model：SVC
+
+![learning curve figure svc](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/svm-learning-curve.png?raw=true)
+
+#### Traditional Model：Desicion Tree
+
+![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/tree-learning-curve.png?raw=true)
 
 ## 7. Future Improvement  
 
