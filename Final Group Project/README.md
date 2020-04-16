@@ -83,11 +83,15 @@ We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), whi
 ##### Part 5: Discription Statistics
 A Yield Curve is a graph depicting the different interest rates for similar financial instruments of different maturities.
 The following figures show the different yield curve after 1990.  
-
+！[Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
+！[Different yield](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/different%20yield.png)  
+  
 A recession is defined as 2 consecutive quarters of negative GDP growth.  
-
+！[recession](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/recession.png)  
 The following figures are interest spread with recessions highlighted.  
-
+！[10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
+！[10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
+！[5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
 
 
 ## 3. Project Goal
