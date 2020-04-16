@@ -15,7 +15,10 @@ Economic recession is one of the most important economic phenomenon in macroecon
 
 Referring to the professor's suggestion, our group decided to launch the project to practice the programming methods learned in the class to preliminarily explore the effect on financial recession, which is generated from the relationship between short-term market interest rates and long-term market interest rates on financial weakness. This project attempts to construct multiple indicator variables based on the interest rates of different financial products in different periods, and seeks the contribution of these indicator variables by machine learning method, moreover, for the chance to get more details of the theoretical explanation of economic recession.
 
-## 2. Brief Description of Data
+## 2. Project Goal
+When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
+
+## 3. Brief Description of Data（这块很多不需要的part1234 要删减）
 
 We get 49 original features from [fred.stlouisfed.org](fred.stlouisfed.org), which are various interests rate for different financial  products and a bunch of different values of some of those. Here are the title of each column data.
 
@@ -96,12 +99,13 @@ The following figures are interest spread with recessions highlighted.
 ![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
 In our following process, we will use data from 1962.
 ![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)  
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
 
-## 3. Project Goal
-When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
+## 4. Feature Engineering(一鸣，简单写一下取哪些feature，意义是啥)
+## 5. Data Preprocessing(一鸣，数据处理过程)
 
-## 4. Project Method  
+
+## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
 However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
   
 As a result, we will add the features below into our model,   
@@ -110,3 +114,14 @@ As a result, we will add the features below into our model,
 3) Definition of the recession: range from 10% to 50%.  
    
 When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
+
+## 7. Future Improvement  
+
+## 8. Conlusion  
+
+## 9. Reference  
+[1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
+[2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll
+[3] The National Bureau of Economic Research: https://www.nber.org/cycles.html  
+[4] Wind  
+[5] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.  
