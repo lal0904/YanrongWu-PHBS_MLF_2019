@@ -22,7 +22,12 @@ When the gap between the long-term bonds and short-term bonds shrinks, it always
 ### 3.1 Raw Data
 1. We download the YTM (yield to maturity) of the US treasuries with various duration range from 1 month to 30 years,from [fred.stlouisfed.org](fred.stlouisfed.org). The data is arranged by daily data and the time span from 1962 to the present. You can see in the [Yield_newVersion.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Yield_newVersion.csv)
 
-2. Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI from [Wind](https://www.wind.com.cn/)
+2. Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI from [Wind](https://www.wind.com.cn/). The raw data is stored in:
+
+[DJ_weekly.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/DJ_weekly.csv) for weekly price and volatility data of DJIA (Dow Jones Industrial Average) index.
+
+[Economic_data.csv](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/data/Economic_data.csv) for monthly CPI and unemployment rate
+.
 ### 3.2 Feature Engineering
 ## 3.3 Data Preprocessing
 
