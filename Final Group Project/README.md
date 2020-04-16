@@ -19,8 +19,8 @@ Referring to the professor's suggestion, our group decided to launch the project
 When the gap between the long-term bonds and short-term bonds shrinks, it always indicates that the market anticipates the interest rates will fall in future as a hedge to upcoming downturn. In some extreme circumstances, this indicator can even alert the recession of the stock market. Our goal is to capture this relationship and make the model useful for recession prediction.  
 
 ## 3. Data Acquisition and Description
-### 1. We download the YTM (yield to maturity) of the US treasuries with various duration range from 1 month to 30 years,from from [fred.stlouisfed.org](fred.stlouisfed.org)
-### 2. Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI
+### 1. We download the YTM (yield to maturity) of the US treasuries with various duration range from 1 month to 30 years,from [fred.stlouisfed.org](fred.stlouisfed.org)
+### 2. Considering that only use the data of the YTM of treasuries maybe not sufficient，we collect more data contains the volatility of the stock market and the changes of the monthly economic indicators such as the rate of unemployment and core CPI from [Wind](https://www.wind.com.cn/)
 ### The table below illustrates the summary of the data:
 ![Features](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/data.png)
 
