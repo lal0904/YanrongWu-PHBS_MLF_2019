@@ -130,7 +130,7 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 [5] Wind   
 [6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.    
 
-## 8. Appendix 
+## 9. Appendix 
 ### Data...  
 The following figures show the different yield curve after 1990.  
 ![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
