@@ -84,15 +84,15 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 
 #### Traditional Model：LR
 
-![learning curve figure lr](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/lr-learning-curve.png?raw=true)
+![learning curve figure lr](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/LR.png)
 
 #### Traditional Model：SVC
 
-![learning curve figure svc](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/svm-learning-curve.png?raw=true)
+![learning curve figure svc](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/SVM.png)
 
 #### Traditional Model：Desicion Tree
 
-![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/tree-learning-curve.png?raw=true)
+![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Tree.png)
 
 ## 7. Future Improvement  
 
