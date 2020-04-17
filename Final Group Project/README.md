@@ -86,24 +86,32 @@ In our following process, we will use data from 1962.
 
 ## 4. Model-Simple Version Only Fcous on Interest Spread
 
-At the first stage of our model, we want to use the features of interst spread to predict the recession.
+At the first stage of our model, we want to just use the features of interest spread to predict the recession. We take the ***10M1*** and ***10M3*** as the features and the result of classification as the ***y***. ***We totally have about 170000 daily data***
 
-We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix to assess model performance.  
+We tried three models(LR,SVM and Tree), by dividing the dataset into training and validation set, we can get the accuracy for both of them. At the same time, we also use confusion matrix to assess model performance. By changing the numbers of data in the training set, we can find the best division of the dataset for each model.
 
 #### Traditional Model：LR
 
 ![learning curve figure lr](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/LR.png)
 
+For LR model, we can see the validation accuracy is stable as around ***86%*** as the changing of the scale of traning set, which means that if we wants to improve the performance further, maybe more features is necessary.
+
 #### Traditional Model：SVC
 
 ![learning curve figure svc](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/SVM.png)
+
+For SVC model, we can see the validation accuracy is indeed improving as we distribute more data for traning ***(propotion from 0.1 to 0.3)***, but stable after 0.3. The optimal accuracy is around ***83%*** which is worse than LR.
 
 #### Traditional Model：Desicion Tree
 
 ![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Tree.png)  
 
 
+For Desicion Tree model, we can see the validation accuracy is improving as the proportion of traning set ***changing from 0.1 to 0.2)***, but stable after 0.2. The optimal accuracy is around ***86%*** which is similar to LR.
+
 ## 5. Current Conlusion  
+
+Comparing the three traditional model, we can see that ***by changing the scale of training set, we can only get an optimal accuracy about 86%***, We think this result is not very satisfying. However, continue to exploit the data of interest spread is not effctive any more and we think more features is needed. At the same time, we think we can also do more upgrade on the designing of the model and feature so we wants to develop an new model in the following part.
 
 ## 6. Model-Upgrade Version to Cover the features of Stock Market and Short-term Economic data (Still Working Now)
 
