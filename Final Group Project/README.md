@@ -78,8 +78,13 @@ The dataset is illustrated below:
 
 2) Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. ***The calssification result in the table below in fact is delayed for six months, which means that the y of 2000/1/1 is the division of 2000/7/1 which is six month later.***
 
+### 3.5 Data Visualization
+In our following process, we will use data from 1962.  
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
+![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
 
-## 6. Model
+
+## 4. Model
 We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix to assess model performance.  
 
 #### Traditional Model：LR
@@ -92,13 +97,20 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 
 #### Traditional Model：Desicion Tree
 
-![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Tree.png)
+![learning curve figure tree](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Tree.png)  
 
-## 7. Future Improvement  
 
-## 8. Conlusion  
+## 5. Current Conlusion  
 
-## 9. Reference  
+## 6. Future Improvement  
+1. From professor‘s suggestions, further we can define a score (continuous value) for recession rather than just use binary value. For example, score can be +5, -4, -3, +3, etc and score < 0  can be recession. For this, we will search more details how NBER is defining recession or see if other econ institution is making some other measure for receission. Once you have a continuous measure, we can train ML methods with the "error" function.  
+
+2. Try all possible "long term yield" and "short term yield" combinations to find the best prediction one.  
+
+3. Our project will improve further, continuing in progress...  
+
+
+## 7. Reference  
 [1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
 [2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll  
 [3] The National Bureau of Economic Research: https://www.nber.org/cycles.html    
@@ -106,7 +118,7 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 [5] Wind   
 [6] Ang, A., Piazzesi, M. and Wei, M. (2003). What Does the Yield Curve Tell Us about GDP Growth?. SSRN Electronic Journal.    
 
-## 10. Appendix 
+## 8. Appendix 
 
 The following figures show the different yield curve after 1990.  
 ![Interest rate](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/Interest%20rate.png)  
@@ -120,9 +132,6 @@ The following figures are interest spread with recessions highlighted.
 ![10-1/-3](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus.png)  
 ![10-5](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/10%20year%20yield%20minus%205.png)  
 ![5-](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/5%20year%20yield%20minus.png)  
-In our following process, we will use data from 1962.
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20yield.png)  
-![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
 
 ##### ***Part 1: Some Difference***s
 
