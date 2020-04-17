@@ -120,7 +120,7 @@ Comparing the three traditional model, we can see that ***by changing the scale 
 
 *1) As we have get the data of the performance of the stock market and real economy, we think we can build a score based on the features because the real economy can be seen as the result of the recession, it's always a little bit  behind the actual economy. At the same time, the stock market can be seen as an anticipation of the future which means it will goes down and recover earlier than the real economy. We think by combination of the two catergrioes togather, we can build an reasonable score for defining the satge of the economy.*
 
-*2) When we reasonably defined the socre, we are going to use the methods we have implemented in the simple version model and ucomparing with the simple one. In our expectation, we want to build an model that can exactly points out which stage the current economy is in.*
+*2) When we reasonably defined the algorithm of score computing, we are going to use the methods we have implemented in the simple version model. After that, we will compare the performance of the two model. In our expectation, our new model can significantly improve the accuracy on prediciting.
 
 
 ## 7. Our Future Improvement
