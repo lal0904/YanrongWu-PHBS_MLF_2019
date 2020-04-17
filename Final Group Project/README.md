@@ -115,14 +115,14 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 *2) When we reasonably defined the socre, we are going to use the methods we have implemented in the simple version model and ucomparing with the simple one. In our expectation, we want to build an model that can exactly points out which stage the current economy is in.*
 
 
-## 6. Our Future Improvement
+## 7. Our Future Improvement
 
 1. Try all possible "long term yield" and "short term yield" combinations to find the best prediction one.  
 
 2. Our project will improve further, continuing in progress...  
 
 
-## 7. Reference  
+## 8. Reference  
 [1] fred.stlouisfed.org:  https://fred.stlouisfed.org/  
 [2] U.S. DEPARTMENT OF THE TREASURY: https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yieldAll  
 [3] The National Bureau of Economic Research: https://www.nber.org/cycles.html    
