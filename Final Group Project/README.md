@@ -84,7 +84,7 @@ In our following process, we will use data from 1962.
 ![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
 
 
-## 4. Model-Simple Version Only Fcous on Interest Spread
+## 4. Model-Simple Version Only Focus on Interest Spread
 
 At the first stage of our model, we want to just use the features of interest spread to predict the recession. We take the ***10M1*** and ***10M3*** as the features and the result of classification as the ***y***. ***We totally have about 170000 daily data***
 
