@@ -79,15 +79,8 @@ The dataset is illustrated below:
 2) Considerng that our target is to predict the likelyhood of the recession accur. It's meaningless to use the synchronized features and classification. ***The calssification result in the table below in fact is delayed for six months, which means that the y of 2000/1/1 is the division of 2000/7/1 which is six month later.***
 
 
-## 6. Model（学弟跑完SVM那三个传统算法可以将结果放上来）
-However, this fact is not detailed enough to guide predictions. Firstly, we need to define what is a recession, 20% down of the stock market or even serious? Secondly, the collapse will not follow the contraction closely, markets need time to digest, so we need a digest time range from a quarter to a year. The difference of the observation period will also affect the result of the define of recession. Lastly, we wonder whether there is a threshold value that when the linear combination of the return rate of short-term and long-term exceed the value, the possibility of recession can be significantly enhanced.  
-
-As a result, we will add the features below into our model,   
-1) Observation period: range from a month to a year;  
-2) Threshold of the linear combination of the return rate such as: Ay – Bx< c;   
-3) Definition of the recession: range from 10% to 50%.  
-
-When we defined the features and processed the data, we will divide the set into train and test, then we will build a model use classifier such as logistic regression and decision tree to maximize the accuracy on the test set. Use this model we can do our predict of the next recession.  
+## 6. Model
+We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix to assess model performance.  
 
 #### Traditional Model：LR
 
