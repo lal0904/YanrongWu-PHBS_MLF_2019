@@ -105,12 +105,21 @@ We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix t
 
 ## 5. Current Conlusion  
 
-## 6. Future Improvement  
-1. From professor‘s suggestions, further we can define a score (continuous value) for recession rather than just use binary value. For example, score can be +5, -4, -3, +3, etc and score < 0  can be recession. For this, we will search more details how NBER is defining recession or see if other econ institution is making some other measure for receission. Once you have a continuous measure, we can train ML methods with the "error" function.  
+## 6. Model-Upgrade Version to Cover the features of Stock Market and Short-term Economic data (Still Working Now)
 
-2. Try all possible "long term yield" and "short term yield" combinations to find the best prediction one.  
+ 
+1. From professor‘s suggestions, further we can define a score (continuous value) for recession rather than just use binary value. For example, score can be +5, -4, -3, +3, etc and score < 0  can be recession. To realize it, we have the ideas below:
 
-3. Our project will improve further, continuing in progress...  
+1) As we have get the data of the performance of the stock market and real economy, we think we can build a score based on the features because the real economy can be seen as the result of the recession, it's always a little bit  behind the actual economy. At the same time, the stock market can be seen as an anticipation of the future which means it will goes down and recover earlier than the real economy. We think by combination of the two catergrioes togather, we can build an reasonable score for defining the satge of the economy.
+
+2) When we reasonably defined the socre, we are going to use the methods we have implemented in the simple version model and ucomparing with the simple one. In our expectation, we want to build an model that can exactly points out which stage the current economy is in.
+
+
+## 6. Our Future Improvement
+
+1. Try all possible "long term yield" and "short term yield" combinations to find the best prediction one.  
+
+2. Our project will improve further, continuing in progress...  
 
 
 ## 7. Reference  
