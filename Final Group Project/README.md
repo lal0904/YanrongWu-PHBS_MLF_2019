@@ -84,7 +84,10 @@ In our following process, we will use data from 1962.
 ![](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/1960s%20onwards%20recession.png)   
 
 
-## 4. Model
+## 4. Model-Simple Version Only Fcous on Interest Spread
+
+At the first stage of our model, we want to use the features of interst spread to predict the recession.
+
 We tried three models(LR,SVM and Tree), and use accuracy, and confusion matrix to assess model performance.  
 
 #### Traditional Model：LR
