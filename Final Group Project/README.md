@@ -64,7 +64,7 @@ According to [NBER's Business Cycle Dating Committee](http://www.nber.org/cycles
 
 ![US_Business_Cycle](https://github.com/YanrongWu/YanrongWu-PHBS_MLF_2019/blob/master/Final%20Group%20Project/Figures/US_Business_Cycle.png)
 
-According to the table, we can define the period between the peak and through of an cycle can be defined as recession. For example, the ***December 1969*** is a peak of an cycle and ***February 1970*** is the through of the same cycle. As a result, we can define the ***December 1969 to February 1970*** as an recession.
+According to the table, we can define the period between the peak and through of an cycle as recession interval. For example, the ***December 1969*** is a peak of an cycle and ***February 1970*** is the through of the same cycle. As a result, we can define the ***December 1969 to February 1970*** as an recession.
 
 Our process model of the fact is class all the date between an recession as 1 and 0 for others, which means that all ***y*** during the interval like ***December 1969 to February 1970*** is 1 and the others is 0
 
